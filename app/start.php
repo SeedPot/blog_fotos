@@ -7,7 +7,9 @@ $config['displayErrorDetails'] = true;
 $config['db']['host']   = "localhost";
 $config['db']['user']   = "root";
 $config['db']['pass']   = "";
-$config['db']['dbname'] = "dentista";   
+$config['db']['dbname'] = "dentista";
+
+
 
 //Instancia de Slim
 $app = new Slim\App(["settings" => $config]);
