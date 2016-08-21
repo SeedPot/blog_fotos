@@ -9,13 +9,25 @@
 
     </head>
     <body>
-
-        <div id="content">{% block content %}{% endblock %}</div>
-        <div id="footer">
-            {% block footer %}
-                &copy; Copyright 2011 by <a href="http://domain.invalid/">you</a>.
-            {% endblock %}
+        <div id="header">
+            <nav class="nav-lista">
+                <a href="{{ path_for('inicio') }}" class="nav-link">Inicio</a>
+                <a href="{{ path_for('acerca') }}" class="nav-link">Acerca de mi</a>
+                <a href="{{ path_for('blog') }}" class="nav-link">Blog</a>
+                <a href="{{ path_for('contacto') }}" class="nav-link">Contacto</a>
+                <a href="{{ path_for('portafolio') }}" class="nav-link">Portafolio</a>
+            </nav>
         </div>
+        <div id="content">{% block content %}{% endblock %}</div>
+       <div id="footer">
+        <nav>
+            <a href="https://www.facebook.com/apvfotografia"><span class="img-icon icon-facebook"></span></a>
+            <a href="https://es.pinterest.com/Alebrie/phototography/"><span class="img-icon icon-pinterest"></span></a>
+            <a href="http://alexandrapardofotografia.tumblr.com/"><span class="img-icon icon-tumblr"></span></a>
+            <a href="https://www.instagram.com/apv.fotografia/"><span class="img-icon icon-instagram"></span></a>
+            <a href="https://www.flickr.com/photos/room409"><span class="img-icon icon-flickr"></span></a>
+        </nav>
+    </div>
 
     </body>
 </html>

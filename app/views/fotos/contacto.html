@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}contacto{% endblock %}
+
+{% block head %}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Alexandra Pardo Fotografía - Contacto</title>
+	<!--
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed header and footer." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" /> -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/flexboxgrid.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/general.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/general.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="contenedor row center-xs">
+		<div class="col-xs-10 col-sm-8 col-md-6">
+			<div class="row center-xs">
+				<div class="col-xs-12">
+					<h1 class="titulo-parrafo">Contacto</h1>
+				</div>
+			</div>
+			<div class="row center-xs">
+				<div class="col-xs-12">
+					<h1 class="subtitulo-parrafo">Enviame tus consultas!</h1>
+				</div>
+			</div>
+			<div class="row start-xs">
+				<div class="col-xs-12 col-sm-12 col-md-4 no-padding input-size">
+					<input type="text" placeholder="NOMBRE"/>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 no-padding input-size">
+					<input type="text" placeholder="EMAIL"/>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 no-padding input-size">
+					<input type="text" placeholder="ASUNTO"/>
+				</div>
+			</div>
+			<div class="row center-xs">
+				<div class="col-xs-12 textarea-size">
+					<textarea type="text" placeholder="MENSAJE" cols="30" rows="10"></textarea>
+				</div>
+			</div>
+			<div class="row center-xs">
+				<div class="col-xs-12 no-padding">
+					<button type="button">ENVIAR</button>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,411 @@
+* {
+	margin:0;
+	padding: 0;
+}
+
+@font-face{
+	font-family: "Montserrat-Regular";
+	src: url(../font/Montserrat-Regular.otf);
+}
+
+a:link{
+	color: inherit;
+	text-decoration: none;
+}
+
+a:visited{
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover{
+	color: inherit;
+	text-decoration: none;
+}
+
+a:active{
+	color: inherit;
+	text-decoration: none;
+}
+/* Style for our header texts
+* --------------------------------------- */
+.inicio-imagen-row{
+	height: 70%;
+}
+
+.contenedor{
+	margin: 120px 20px 120px 20px;
+	padding: 20px;
+}
+
+.titulo-parrafo{
+	color: #333333;
+	margin:0;
+	padding:0;
+    font-family: 'Montserrat-Regular', arial, sans-serif;
+   	line-height: 1.5em;
+	font-size: 18px;
+	letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 53px;   
+    font-weight: normal;
+}
+
+.subtitulo-parrafo{
+	color: #333333;
+	margin:0;
+	padding:0;
+    font-family: 'Montserrat-Regular', arial, sans-serif;
+   	line-height: 1.5em;
+	font-size: 12px;
+	letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;   
+    font-weight: normal;
+}
+
+
+.contenido-parrafo{
+	color:  #333333;
+	margin:0;
+    font-family: 'Verdana', sans-serif;
+	font-size: 12px;  
+    text-align: justify;
+    line-height: 20px;
+}
+
+.titulo-inicio{
+	color: #fff;
+	margin:0;
+	padding:0;
+    font-family: 'Montserrat-Regular', arial, sans-serif;
+   	line-height: 1.5em;
+	font-size: 22px;
+	letter-spacing: 9px;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+.subtitulo-inicio{
+	color: #fff;
+    font-family: 'Montserrat-Regular', arial, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+	text-align:center;
+}
+
+#section0{
+	background: no-repeat url(../img/imagen-compromiso-inicio.jpg) !important;
+	background-size: cover !important;
+	background-position:center !important;
+}
+
+#section1{
+	background: no-repeat url(../img/imagen-bodas-inicio.jpg) !important;
+	background-size: cover !important;
+	background-position:center !important;
+}
+
+#section2{
+	background: no-repeat url(../img/imagen-trashdress-inicio.jpg) !important;
+	background-size: cover !important;
+	background-position:center !important;
+}
+
+#section3{
+	background: no-repeat url(../img/imagen-familiar-inicio.jpg) !important;
+	background-size: cover !important;
+	background-position:center !important;
+}
+
+#section4{
+	background: no-repeat url(../img/imagen-embarazo-inicio.jpg) !important;
+	background-size: cover !important;
+	background-position:center !important;
+}
+
+#section5{
+	background: no-repeat url(../img/imagen-retrato-inicio.jpg) !important;
+	background-size: cover !important;
+	background-position:center !important;
+}
+
+#section6{
+	background: no-repeat url(../img/imagen-evento-inicio.jpg) !important;
+	background-size: cover !important;
+	background-position:center !important;
+}
+
+#section7{
+	background: no-repeat url(../img/imagen-viaje-inicio.jpg) !important;
+	background-size: cover !important;
+	background-position:center !important;
+}
+
+/* Fixed header and footer.
+* --------------------------------------- */
+#header, #footer{
+	position:fixed;
+	height: 50px;
+	display:block;
+	width: 100%;
+	background: #fff;
+	z-index:9;
+	color: #808b96;
+	padding: 20px 0 10px 0;
+	font-size: 10px;
+    text-align: center;
+    font-family: 'Montserrat-Regular', arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    vertical-align: middle;
+}
+
+#header .nav-link{
+	padding: 0 20px 0 20px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	text-decoration: none;
+	line-height: 25px;
+}
+
+.nav-link:hover{
+	color: #000;
+}
+
+.nav-lista{
+	margin: 5px 0 5px 0;
+}
+
+#header{
+	top:0px;
+	border-bottom: solid 1px #808b96;
+}
+#footer{
+	bottom:0px;
+	border-top: solid 1px #808b96;
+}
+
+#footer .img-icon{
+	padding: 4px 0 4px 4px; 
+	border: 2px solid #808b96; 
+	font-size: 14px;
+}
+
+#footer .img-icon:hover{
+	border-color: #000;
+	color: #000;
+}
+
+.imagen-perfil{
+	width: 100%;
+	height: auto;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu {
+	bottom: 80px;
+}
+
+#infoMenu li a {
+	color: #fff;
+	z-index: 999;
+}
+
+.no-padding{
+	padding: 0;
+}
+
+input{
+	border: 0;
+	width: 100%;
+	border: 2px solid #333333;
+	padding: 5px 0 5px 10px;
+	
+}
+
+.input-size{
+	margin-top: 5px;
+	padding-right: 15px;	
+}
+
+::-webkit-input-placeholder {
+  	color: #000;
+	font-family: 'Montserrat-Regular', arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: #000;
+	font-family: 'Montserrat-Regular', arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: #000;
+	font-family: 'Montserrat-Regular', arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+
+:-ms-input-placeholder {  
+	color: #000;
+	font-family: 'Montserrat-Regular', arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+
+input[type="text"] {
+    color: #000;
+	font-family: 'Montserrat-Regular', arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+
+textarea[type="text"] {
+    color: #000;
+	font-family: 'Montserrat-Regular', arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+
+.textarea-size{
+	border: 2px solid #333333;
+	padding: 5px 10px 5px 10px;
+	margin-top: 10px;
+}
+
+textarea{
+	width: 100%;
+	height: 120px;
+	border: 0;	
+	font-family: Tahoma, sans-serif;
+	background-image: url(bg.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	resize: none;
+}
+
+button{
+	border: 2px solid #333333;
+	padding: 9px 10px 9px 10px;
+	width: 100%;
+	margin-top: 10px;
+	color: #000;
+	font-family: 'Montserrat-Regular', arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+	background-color: #fff;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+button:hover{
+	background-color: #333333;
+	color:#fff;
+}
+
+/*Animaciones 
+* --------------------------------------- */
+
+.fade-in-from-bottom-animacion{
+	-webkit-animation: slide-up 0.5s .1s cubic-bezier(0.17,.88,.32,1.27) both, fade-in .25s .1s ease-in both;
+	-moz-animation: slide-up 0.5s .1s cubic-bezier(0.17,.88,.32,1.27) both, fade-in .25s .1s ease-in both;
+	-ms-animation: slide-up 0.5s .1s cubic-bezier(0.17,.88,.32,1.27) both, fade-in .25s .1s ease-in both;
+	-o-animation: slide-up 0.5s .1s cubic-bezier(0.17,.88,.32,1.27) both, fade-in .25s .1s ease-in both;
+	animation: slide-up 0.5s .1s cubic-bezier(0.17,.88,.32,1.27) both, fade-in .25s .1s ease-in both;
+}
+
+@-webkit-keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-moz-keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-ms-keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-o-keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fade-in {
+   from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes slide-up{
+	from {transform: translateY(200%);}
+    to {transform:translateY(-50%);}
+}
+
+@-moz-keyframes slide-up{
+	from {transform: translateY(200%);}
+    to {transform:translateY(-50%);}
+}
+
+@-ms-keyframes slide-up{
+	from {transform: translateY(200%);}
+    to {transform:translateY(-50%);}
+}
+
+@-o-keyframes slide-up{
+	from {transform: translateY(200%);}
+    to {transform:translateY(-50%);}
+}
+
+@keyframes slide-up{
+	from {transform: translateY(200%);}
+    to {transform:translateY(-50%);}
+}
+
+@media only screen and (max-width: 975px) {
+ 	.nav-link{
+ 		font-size: 12px;
+ 	}
+ 	.nav-lista{
+		margin: 10px 0 20px 0;
+	}
+	#header{
+		padding: 20px 0 20px 0;
+	}
+	
+}
+
+@media only screen and (max-width: 691px) {
+ 	#header{
+		padding: 10px 0 30px 0;
+	}
+}
