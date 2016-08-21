@@ -20,16 +20,6 @@ $app->get('/acerca', function ($request, $response, $args) {
 })->setName('acerca');
 
 
-//Blog
-$app->get('/blog', function ($request, $response, $args) {
-
-    return $this->view->render($response, 'fotos/blog.html', [
-        'name' => 'hola'
-    ]);
-
-})->setName('blog');
-
-
 //Contacto
 $app->get('/contacto', function ($request, $response, $args) {
 

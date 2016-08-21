@@ -1,0 +1,8 @@
+
+{% for post in posts %}
+	<div>
+		<h1>{{post.TITULO_PUBLICACION}}</h1>
+		<span>visitas: {{post.VISITAS_PUBLICACION}}</span>
+	</div>
+	<p>{{post.DESCRIPCION_PUBLICACION}}</p>
+{% endfor %}
