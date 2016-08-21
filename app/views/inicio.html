@@ -3,15 +3,94 @@
 {% block title %}Inicio{% endblock %}
 
 {% block head %}
-    {{ parent() }}
-    <style type="text/css">
-        .important { color: #336699; }
-    </style>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Alexandra Pardo Fotografía - Iquique</title>
+	<!--
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed header and footer." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" /> -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/flexboxgrid.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/general.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/general.js"></script>
 {% endblock %}
 
 {% block content %}
-    <h1>Index</h1>
-    <p class="important">
-        Welcome on my awesome homepage. <a href="{{ path_for('inicio') }}"> home</a>
-    </p>
+	<div id="fullpage">
+		<div class="section" id="section0">
+			<div class="row inicio-imagen-row bottom-xs">
+				<div class="col-xs-6 col-xs-offset-3">
+					<h1 class="elemento-animado titulo-inicio">Engagements</h1>
+					<p class="elemento-animado subtitulo-inicio">pre boda</p>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="row inicio-imagen-row bottom-xs">
+				<div class="col-xs-6 col-xs-offset-3">
+					<h1 class="elemento-animado titulo-inicio">Weddings</h1>
+					<p class="elemento-animado subtitulo-inicio">bodas</p>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<div class="row inicio-imagen-row bottom-xs">
+				<div class="col-xs-6 col-xs-offset-3">
+					<h1 class="elemento-animado titulo-inicio">Trash the dress</h1>
+					<p class="elemento-animado subtitulo-inicio">post boda</p>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<div class="row inicio-imagen-row bottom-xs">
+				<div class="col-xs-6 col-xs-offset-3">
+					<h1 class="elemento-animado titulo-inicio">Child & Family</h1>
+					<p class="elemento-animado subtitulo-inicio">familiar</p>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section4">
+			<div class="row inicio-imagen-row bottom-xs">
+				<div class="col-xs-6 col-xs-offset-3">
+					<h1 class="elemento-animado titulo-inicio">Pregnancy</h1>
+					<p class="elemento-animado subtitulo-inicio">embarazo</p>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section5">
+			<div class="row inicio-imagen-row bottom-xs">
+				<div class="col-xs-6 col-xs-offset-3">
+					<h1 class="elemento-animado titulo-inicio">Portraits</h1>
+					<p class="elemento-animado subtitulo-inicio">retratos</p>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section6">
+			<div class="row inicio-imagen-row bottom-xs">
+				<div class="col-xs-6 col-xs-offset-3">
+					<h1 class="elemento-animado titulo-inicio">Events</h1>
+					<p class="elemento-animado subtitulo-inicio">eventos</p>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section7">
+			<div class="row inicio-imagen-row bottom-xs">
+				<div class="col-xs-6 col-xs-offset-3">
+					<h1 class="elemento-animado titulo-inicio">Travels</h1>
+					<p class="elemento-animado subtitulo-inicio">viajes</p>
+				</div>
+			</div>
+		</div>
+	</div>
+>>>>>>> 5300c47731fab10909c7bfb33c65223efde5cb18
 {% endblock %}

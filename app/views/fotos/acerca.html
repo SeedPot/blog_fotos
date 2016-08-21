@@ -2,15 +2,50 @@
 {% block title %}Acerca{% endblock %}
 
 {% block head %}
-    {{ parent() }}
-    <style type="text/css">
-        .important { color: #336699; }
-    </style>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Alexandra Pardo Fotografía - Acerca</title>
+	<!--
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed header and footer." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" /> -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/flexboxgrid.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/general.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/general.js"></script>
 {% endblock %}
 
 {% block content %}
-    <h1>Index</h1>
-    <p class="important">
-        Welcome on my awesome homepage. <a href="{{ path_for('home') }}"> home</a>
-    </p>
+  	<div class="contenedor">
+		<div class="col-xs-12">
+			<div class="row center-xs">
+				<div class="col-xs-12">
+					<h1 class="titulo-parrafo">Acerca de mi</h1>
+				</div>
+				<div class="col-xs-12">
+					<div class="row start-xs">
+						<div class="col-md-4 col-md-offset-2">
+							<img class="imagen-perfil" src="img/imagen-perfil.jpg" alt="perfil">
+						</div>
+						<div class="col-md-4 contenido-parrafo">
+							<p>¡Hola! mi Nombre es Alexandra Pardo.
+								Soy Chilena Nacida en Iquique, actualmente viviendo y trabajando como Fotógrafa independiente en esta bella ciudad.</p>
+							<br>
+							<p>Alexandra Pardo Fotografía está disponible en las áreas de 		evento, retratos individuales, estilo de vida, parejas, 		niños y bebés.</p>
+							<br>
+							<p>Para más información y consultas de reserva en:             		alexandrapardovega@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 {% endblock %}
