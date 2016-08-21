@@ -468,6 +468,6 @@ button:hover{
 }
 
 .texto-derecha{
-	text-align: right;
+	text-align: right !important;
 }
 
