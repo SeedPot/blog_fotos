@@ -47,7 +47,7 @@ a:active{
 	font-size: 18px;
 	letter-spacing: 5px;
     text-transform: uppercase;
-    margin-bottom: 53px;   
+    margin-bottom: 45px;   
     font-weight: normal;
 }
 
@@ -64,6 +64,20 @@ a:active{
     font-weight: normal;
 }
 
+.texto-normal{
+	font-family: 'Montserrat-Regular', arial, sans-serif;
+	color: #333333;
+	letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.texto-tag{
+	margin-top: 4px;
+	font-family: 'Montserrat-Regular', arial, sans-serif;
+	color: #333333;
+    text-transform: uppercase;
+    font-size: 12px;
+}
 
 .contenido-parrafo{
 	color:  #333333;
@@ -104,49 +118,49 @@ a:active{
 }
 
 #section0{
-	background: no-repeat url(../img/imagen-compromiso-inicio.jpg) !important;
+	background: no-repeat url(../img/portada/imagen-compromiso-inicio.jpg) !important;
 	background-size: cover !important;
 	background-position:center !important;
 }
 
 #section1{
-	background: no-repeat url(../img/imagen-bodas-inicio.jpg) !important;
+	background: no-repeat url(../img/portada/imagen-bodas-inicio.jpg) !important;
 	background-size: cover !important;
 	background-position:center !important;
 }
 
 #section2{
-	background: no-repeat url(../img/imagen-trashdress-inicio.jpg) !important;
+	background: no-repeat url(../img/portada/imagen-trashdress-inicio.jpg) !important;
 	background-size: cover !important;
 	background-position:center !important;
 }
 
 #section3{
-	background: no-repeat url(../img/imagen-familiar-inicio.jpg) !important;
+	background: no-repeat url(../img/portada/imagen-familiar-inicio.jpg) !important;
 	background-size: cover !important;
 	background-position:center !important;
 }
 
 #section4{
-	background: no-repeat url(../img/imagen-embarazo-inicio.jpg) !important;
+	background: no-repeat url(../img/portada/imagen-embarazo-inicio.jpg) !important;
 	background-size: cover !important;
 	background-position:center !important;
 }
 
 #section5{
-	background: no-repeat url(../img/imagen-retrato-inicio.jpg) !important;
+	background: no-repeat url(../img/portada/imagen-retrato-inicio.jpg) !important;
 	background-size: cover !important;
 	background-position:center !important;
 }
 
 #section6{
-	background: no-repeat url(../img/imagen-evento-inicio.jpg) !important;
+	background: no-repeat url(../img/portada/imagen-evento-inicio.jpg) !important;
 	background-size: cover !important;
 	background-position:center !important;
 }
 
 #section7{
-	background: no-repeat url(../img/imagen-viaje-inicio.jpg) !important;
+	background: no-repeat url(../img/portada/imagen-viaje-inicio.jpg) !important;
 	background-size: cover !important;
 	background-position:center !important;
 }
@@ -409,3 +423,51 @@ button:hover{
 		padding: 10px 0 30px 0;
 	}
 }
+
+.titulo-post{
+	color: #333333;
+	margin:0;
+	padding:0;
+    font-family: 'Montserrat-Regular', arial, sans-serif;
+   	line-height: 1.5em;
+	font-size: 18px;
+	letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;   
+    font-weight: normal;
+}
+
+.img-blog-portada{
+	width:100%;
+	margin-bottom: 10px;
+}
+
+.texto-secundario{
+	font-size: 10px;
+	font-family: 'Montserrat-Regular', arial, sans-serif;
+	letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;   
+    color: #808b96
+}
+
+.font-16{
+	font-size: 16px;
+}
+
+.texto-centrado{
+	text-align: center;
+}
+
+.footer-post{
+	margin-top: 10px;
+}
+
+.texto-izquierda{
+	text-align: left;
+}
+
+.texto-derecha{
+	text-align: right;
+}
+
