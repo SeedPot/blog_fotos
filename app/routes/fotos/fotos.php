@@ -39,8 +39,11 @@ $app->get('/portafolio', function ($request, $response, $args) {
 
 })->setName('portafolio');
 
+<<<<<<< HEAD
 //Contacto
 $app->post('/contacto', function ($reques, $response, $args) {
 
 
 }
+=======
+>>>>>>> 1af42052fa7d10aee02b88d2d5e105e4b1a0ad36
