@@ -65,7 +65,7 @@ $app->get('/post/{post}', function($request, $response, $args){
 	} catch(PDOException $e) {
 		echo "Error: " . $e->getMessage();
 	}
-	
-	return $this->view->render($response, 'fotos/post.html', ['post' => $post]);
+
+	//return $this->view->render($response, 'fotos/post.html', ['post' => $post]);
 
 })->setName('post');
