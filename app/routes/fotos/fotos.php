@@ -39,4 +39,3 @@ $app->get('/portafolio', function ($request, $response, $args) {
 
 })->setName('portafolio');
 
-

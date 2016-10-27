@@ -243,17 +243,17 @@ a:active{
 	padding: 0;
 }
 
-input{
-	border: 0;
-	width: 100%;
-	border: 2px solid #333333;
-	padding: 5px 0 5px 10px;
-	
+.row{
+	margin-left: 0;
+	margin-right: 0;
 }
 
-.input-size{
-	margin-top: 5px;
-	padding-right: 15px;	
+input{
+	border: 0;
+	border: 2px solid #333333;
+	padding: 5px 0 5px 10px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 ::-webkit-input-placeholder {
@@ -289,6 +289,7 @@ input{
 }
 
 input[type="text"] {
+	margin-top: 10px;
     color: #000;
 	font-family: 'Montserrat-Regular', arial, sans-serif;
 	text-transform: uppercase;
@@ -308,6 +309,8 @@ textarea[type="text"] {
 	border: 2px solid #333333;
 	padding: 5px 10px 5px 10px;
 	margin-top: 10px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 textarea{
@@ -470,4 +473,3 @@ button:hover{
 .texto-derecha{
 	text-align: right !important;
 }
-
