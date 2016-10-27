@@ -10,10 +10,10 @@
         $message = trim($_POST["message"]);
 
         // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if ( empty($name) OR empty($message) OR empty($message) OR empty($subject) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             //Set a 400 (bad request) response code and exit.
-            http_response_code(400);
-            echo "Ocurrió un error.";
+            http_response_code(400);            
+            echo "Revisa que los campos estén completos.";
             exit;
         }
 
