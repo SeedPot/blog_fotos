@@ -29,36 +29,38 @@
 					<h1 class="titulo-parrafo">Contacto</h1>
 				</div>
 			</div>
-		</div>
-		<div class="row center-xs">
-			<div class="col-xs-12">
-				<h1 class="subtitulo-parrafo">Enviame tus consultas!</h1>
-			</div>
-		</div>
-		<form action="mail.php" method="POST" id="ajax-contact">
-			<div class="row between-xs inputs-container">
-				<div class="col-xs-12 col-sm-12 col-md-6">
-					<input id="name" name="name" type="text" placeholder="NOMBRE" />
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6">
-					<input id="email" name="email" type="text" placeholder="EMAIL" />
-				</div>
-			</div>
-			<div class="row between-xs inputs-container">
-				<div class="col-xs-12 col-sm-12 col-md-12">
-					<input id="subject" name="subject" type="text" placeholder="ASUNTO" />
-				</div>
-			</div>
 			<div class="row center-xs">
 				<div class="col-xs-12">
-					<textarea id="message" name="message" class="textarea-size" type="text" placeholder="MENSAJE" cols="30" rows="10"></textarea>
+					<h1 class="subtitulo-parrafo">Enviame tus consultas!</h1>
 				</div>
 			</div>
-			<div class="row center-xs">
-				<div class="col-xs-12">
-					<button id="send" name="send" type="submit">ENVIAR</button>
+			<form action="mail.php" method="POST" id="ajax-contact">
+				<div class="row between-xs inputs-container">
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<input id="name" name="name" type="text" placeholder="NOMBRE" />
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<input id="email" name="email" type="text" placeholder="EMAIL" />
+					</div>
 				</div>
+				<div class="row between-xs inputs-container">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<input id="subject" name="subject" type="text" placeholder="ASUNTO" />
+					</div>
+				</div>
+				<div class="row center-xs">
+					<div class="col-xs-12">
+						<textarea id="message" name="message" class="textarea-size" type="text" placeholder="MENSAJE" cols="30" rows="10"></textarea>
+					</div>
+				</div>
+				<div class="row center-xs">
+					<div class="col-xs-12">
+						<button id="send" name="send" type="submit">ENVIAR</button>
+					</div>
+				</div>
+
 			</div>
+		</div>
 		</form>
 		<div class="row center-xs">
 			<div id="form-messages" class="col-xs-6"></div>

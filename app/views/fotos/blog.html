@@ -29,40 +29,56 @@
      	{% for post in posts %} 
     	<div class="post">
     		<div class="row">
-		    	<div class="col-md-6 col-md-offset-3">
-		    		<h2 class="titulo-post texto-centrado"><a href="{{ path_for('post', {'post':post.ID_PUBLICACION}) }}">{{ post.TITULO_PUBLICACION }}</a></h2>
+		    	<div class="col-xs-12 col-xs-offset-0 col-md-6 col-md-offset-3">
+		    		<h2 class="titulo-post texto-centrado">
+		    			<a href="{{ path_for('post', {'post':post.ID_PUBLICACION}) }}">
+		    				{{post.TITULO_PUBLICACION}}
+		    			</a>
+		    		</h2>
 		    	</div>
 		    </div>
 		    <div class="row center-xs start-md">
-		    	<div class="col-md-6 col-md-offset-3">
-		    		<h2 class="texto-secundario texto-centrado"><span class="img-icon font-16 icon-location-pin"></span>{{ post.LUGAR_PUBLICACION }}</h2>
+		    	<div class="col-xs-12 col-xs-offset-0 col-md-6 col-md-offset-3">
+		    		<h2 class="texto-secundario texto-centrado">
+		    			<div class="post-ubicacion">
+		    				{{post.LUGAR_PUBLICACION}}
+		    			</div>
+		    		</h2>
 		    	</div>
 		    </div>
 		    <div class="row center-xs start-md">
-		    	<div class="col-md-6 col-md-offset-3">
+		    	<div class="col-xs-12 col-xs-offset-0 col-md-6 col-md-offset-3">
 		    		<h2 class="texto-secundario texto-derecha">{{ post.FECHA_PUBLICACION }}</h2>
 		    	</div>
 		    </div>
 			<div class="row">
-		    	<div class="col-md-6 col-md-offset-3">
-		      		<img class="img-blog-portada" src="img/blog/post_1/portada.jpg">
-		    		<p class="contenido-parrafo">
-		    		{{ post.DESCRIPCION_PUBLICACION }}
-					</p>
+		    	<div class="col-xs-12 col-xs-offset-0 col-md-6 col-md-offset-3">
+		      		<a href="{{ path_for('post', {'post':post.ID_PUBLICACION}) }}">
+		      			<img class="img-blog-portada" src="img/blog/post_1/portada.jpg">
+		    			<p class="contenido-parrafo">
+		    				{{post.DESCRIPCION_PUBLICACION}}
+						</p>
+					</a>
 				</div>
 			</div>
 			<div class="row footer-post">
-				<div class="col-md-6 col-md-offset-3 texto-left texto-tag">
+				<div class="col-xs-12 col-xs-offset-0 col-md-6 col-md-offset-3 texto-left texto-tag">
+					<ul class="tag-list">
 					{% for tag in post.tags %}
-						{{ tag.NOMBRE_ETIQUETA }}
+						<li>
+						{{tag.NOMBRE_ETIQUETA}}
+						</li>
 					{% endfor %}
+					</ul>
 				</div>
 			</div>
 			<div class="row footer-post end-xs start-md">		
-				<div class="col-md-6 col-md-offset-3 texto-derecha texto-normal">
-					<span class="img-icon icon-eye"></span>{{ post.VISITAS_PUBLICACION }}
-					<span class="img-icon icon-message"></span>{{ post.NUMERO_COMENTARIOS }}
-					<span class="img-icon icon-share"></span>
+				<div class="col-xs-12 col-xs-offset-0 col-md-6 col-md-offset-3 texto-derecha texto-normal">
+					<ul class="views-list">
+						<li class="views">{{post.VISITAS_PUBLICACION}}</li>
+						<li class="comments">{{post.NUMERO_COMENTARIOS}}</li>
+						<li class="share"></li>
+					</ul>
 				</div>				
 			</div>
 		</div>
